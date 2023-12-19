@@ -3,9 +3,14 @@
     "description": "Object schema validation",
     "version": "17.11.0",
     "repository": "git://github.com/hapijs/joi",
-    "main": "lib/index.js",
+    "main": "dist/joi-browser.min.js",
     "types": "lib/index.d.ts",
-    "browser": "dist/joi-browser.min.js",
+    "exports": {
+        ".": {
+            "browser": "./dist/joi-browser.min.js",
+            "default": "./lib/index.js"
+        }
+    },
     "files": [
         "lib/**/*",
         "dist/*"
